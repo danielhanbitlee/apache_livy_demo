@@ -19,4 +19,9 @@ Simple demo of Apache Livy. Using Java code, I will run pyspark using Livy API.
 
 # Demo: Run Spark job Using Apache Livy
 
-1. 
+1. Start the Livy server:
+    ```./livy-server start```
+* adfaf
+
+# References
+1. <https://livy.apache.org>
