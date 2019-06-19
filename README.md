@@ -22,7 +22,7 @@ Simple demo of Apache Livy. Using Java code, I will run pyspark jobs using the L
 <br/><br/>
 ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/spark_submit_cmd.png)
 
-`spark_example.py` is a simple pyspark script that estimates the value of pi, create a text file, and save into the `outputs` directory.
+[`spark_example.py`](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/pyfiles/spark_example.py) is a simple pyspark script that estimates the value of pi, create a text file, and save into the [`outputs`](https://github.com/danielhanbitlee/apache_livy_demo/tree/master/outputs) directory.
 # Demo: Run Spark job using Apache Livy
 
 1. Follow instructions on installing the Livy server from [here](https://github.com/apache/incubator-livy).
