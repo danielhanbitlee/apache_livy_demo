@@ -11,17 +11,18 @@ Simple demo of Apache Livy. Using Java code, I will run pyspark jobs using the L
 * Multiple Spark Contexts can be managed simultaneously<sup>[1]</sup>
 * Spark Contexts run on the cluster instead of the Livy Server<sup>[1]</sup>
 * Client does not need Spark installed<sup>[2]</sup>
+* Interacting with Livy is language agnostic because any language can interact with Livy REST API
 
 # Livy Server Architecture<sup>[2]</sup>
 ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/livy_server_architecture.png)
 
-# Demo: Run Spark job Using spark-submit
+# Demo: Run Spark job using spark-submit
 
 ```spark-submit --py-files spark_example_utils.zip spark_example.py test_arg_1```
 ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/spark_submit_cmd.png)
 
 `spark_example.py` is a simple pyspark script that estimates the value of pi, create a text file, and save into the `outputs` directory.
-# Demo: Run Spark job Using Apache Livy
+# Demo: Run Spark job using Apache Livy
 
 1. Follow instructions on installing the Livy server from [here](https://github.com/apache/incubator-livy).
 2. Start the Livy server:
