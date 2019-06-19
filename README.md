@@ -15,6 +15,15 @@ Simple demo of Apache Livy. Using Java code, I will run batch pyspark jobs using
 # Livy Server Architecture<sup>[2]</sup>
 ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/livy_server_architecture.png)
 
+# Environment
+* Linux Ubuntu 18.04.01 LTS Bionic
+* Java Version 1.8.0_211-b12 SE Runtime Environment
+* Spark version 2.4.3
+* Python version 3.6.8
+* Hadoop version 3.2.0
+* Maven version 3.6.1
+* Livy latest version <https://github.com/apache/incubator-livy>
+
 # Demo: Run Spark job using spark-submit
 
 ```spark-submit --py-files spark_example_utils.zip spark_example.py test_arg_1```
