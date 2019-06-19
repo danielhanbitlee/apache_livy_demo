@@ -9,7 +9,6 @@ Simple demo of Apache Livy. Using Java code, I will run batch pyspark jobs using
 # Advantages of Livy
 * Multiple users can interact with the Spark cluster concurrently and reliably<sup>[1]</sup>
 * Multiple Spark Contexts can be managed simultaneously<sup>[1]</sup>
-* Spark Contexts run on the cluster instead of the Livy Server<sup>[1]</sup>
 * Client does not need Spark installed<sup>[2]</sup>
 * Interacting with Livy is language agnostic because any language can interact with Livy REST API
 
