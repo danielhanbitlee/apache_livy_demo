@@ -29,7 +29,7 @@ Simple demo of Apache Livy. Using Java code, I will run pyspark jobs using the L
     ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/livy_server_start.png)
 3. Go to <http://localhost:8998/ui> to see the user interface that comes with the Livy server.
     ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/initial_livy_ui.png)
-4. Submit a spark job using Java code. `PostToLivy.java` code is below:  
+4. Submit a spark job using Java code. [`PostToLivy.java`](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/src/PostToLivy.java) code is below:  
     ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/PostToLivy.png)
     Note how ```spark-submit --py-files spark_example_utils.zip spark_example.py test_arg_1``` has been inputted in the Java code.  
       a. Compile Java code: ```javac PostToLivy.java```  
