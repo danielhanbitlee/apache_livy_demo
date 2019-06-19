@@ -1,5 +1,5 @@
 # apache_livy_demo
-Simple demo of Apache Livy. Using Java code, I will run pyspark jobs using the Livy API.
+Simple demo of Apache Livy. Using Java code, I will run batch pyspark jobs using the Livy API.
 
 # What is Livy?
 * A service that enables easy interaction with a Spark cluster over a REST interface<sup>[1]</sup>
