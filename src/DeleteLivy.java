@@ -10,7 +10,7 @@ public class DeleteLivy {
 
     public static void main (String []args) throws IOException{
 
-        URL url = new URL ("http://localhost:8998/batches/20");
+        URL url = new URL ("http://localhost:8998/" + args[0] + "/" + args[1]);
 
         HttpURLConnection con = (HttpURLConnection)url.openConnection();
         con.setRequestMethod("DELETE");

@@ -22,9 +22,9 @@ public class PostToLivy {
         con.setDoOutput(true);
 
         //construct JSON String
-        String jsonInputString = "{\"file\": \"file:/home/daniel/Documents/GitHub/livy_example/spark_example.py\"," +
+        String jsonInputString = "{\"file\": \"file:/home/daniel/Documents/GitHub/apache_livy_demo/pyfiles/spark_example.py\"," +
                 "\"args\": [\"test_arg_1\"]," +
-                "\"pyFiles\": [\"file:/home/daniel/Documents/GitHub/livy_example/spark_example_utils.zip\"]}";
+                "\"pyFiles\": [\"file:/home/daniel/Documents/GitHub/apache_livy_demo/pyfiles/spark_example_utils.zip\"]}";
         try(OutputStream os = con.getOutputStream()){
             byte[] input = jsonInputString.getBytes("utf-8");
             os.write(input, 0, input.length);
@@ -44,5 +44,3 @@ public class PostToLivy {
     }
 
 }
-
-///usr/local/java/lib/*:/home/daniel/Documents/GitHub/incubator-livy/api/src/main/java:/opt/spark/spark-2.4.3-bin-hadoop2.7/jars/*:.

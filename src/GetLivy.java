@@ -10,9 +10,6 @@ public class GetLivy {
 
     public static void main (String []args) throws IOException{
 
-        for (String arg : args)
-            System.out.println(arg);
-
         URL url = new URL ("http://localhost:8998/" + args[0] + "/" + args[1]);
 
         HttpURLConnection con = (HttpURLConnection)url.openConnection();
