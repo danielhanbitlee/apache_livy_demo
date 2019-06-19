@@ -34,48 +34,37 @@ Simple demo of Apache Livy. Using Java code, I will run pyspark jobs using the L
 <br/><br/>
     ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/initial_livy_ui.png)
 4. Go to appropriate directory and submit a batch spark job using Java code. [`PostToLivy.java`](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/src/PostToLivy.java) code is below: 
-<br/><br/>
     ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/PostToLivy.png)
     Note how ```spark-submit --py-files spark_example_utils.zip spark_example.py test_arg_1``` has been transformed in this Java code that interacts with the Livy REST API.  
     &nbsp;&nbsp;&nbsp;&nbsp;a. Compile Java code: ```javac PostToLivy.java```
-    <br/><br/>
     ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/javac_PostToLivy.png)
-    &nbsp;&nbsp;&nbsp;&nbsp;b. Run Java code: ```java PostToLivy```  
-    <br/><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;b. Run Java code: ```java PostToLivy```
     ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/java_PostToLivy.png)
     &nbsp;&nbsp;&nbsp;&nbsp;c. See how Livy user interface has been updated.
-    <br/><br/>
     ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/PostToLivy_ui.png)
     &nbsp;&nbsp;&nbsp;&nbsp;d. See the logs from Livy Server user interface.
-    <br/><br/>
     ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/PostToLivy_ui_log.png)
 5. Get status of batch spark job using Java code. [`GetLivy.java`](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/src/GetLivy.java) code is below:
-<br/><br/>
     ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/GetLivy.png)
     &nbsp;&nbsp;&nbsp;&nbsp;a. Compile Java code: ```javac GetLivy.java```
-    <br/><br/>
     ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/javac_GetLivy.png)
     &nbsp;&nbsp;&nbsp;&nbsp;b. Run Java code: ```java GetLivy batches 0```  
-    <br/><br/>
     ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/java_GetLivy.png)
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notice that I passed in arguments `batches` and `0` to `GetLivy.java`.  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* `batches` refer to the type of Spark job submitted to Livy  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* `0` is the batch id number.
 6. Submit multiple batch jobs to Livy.
 7. Delete a batch job using Java code. [`DeleteLivy.java`](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/src/DeleteLivy.java) code is below:
-<br/><br/>
 ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/DeleteLivy.png)
     &nbsp;&nbsp;&nbsp;&nbsp;a. Compile Java code: ```javac DeleteLivy.java```
-    <br/><br/>
     ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/javac_DeleteLivy.png)
     &nbsp;&nbsp;&nbsp;&nbsp;b. Run Java code: ```java DeleteLivy batches 0```  
-    <br/><br/>
     ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/java_DeleteLivy.png)
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notice that I passed in arguments `batches` and `0` to `GetLivy.java`.  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* `batches` refer to the type of Spark job submitted to Livy  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* `0` is the batch id number.
 8. Go to appropriate directory and shut down Livy server:
- ```./livy-server start```
+ ```./livy-server stop```
  <br/><br/>
     ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/livy_server_stop.png)
 
