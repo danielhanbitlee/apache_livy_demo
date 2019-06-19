@@ -34,7 +34,10 @@ Simple demo of Apache Livy. Using Java code, I will run pyspark jobs using the L
     ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/PostToLivy.png)
     Note how ```spark-submit --py-files spark_example_utils.zip spark_example.py test_arg_1``` has been transformed in this Java code that interacts with the Livy REST API.  
     &nbsp;&nbsp;&nbsp;&nbsp;a. Compile Java code: ```javac PostToLivy.java```  
+    ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/javac_PostToLivy.png)
     &nbsp;&nbsp;&nbsp;&nbsp;b. Run Java code: ```java PostToLivy```  
+    ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/java_PostToLivy.png)
+
     &nbsp;&nbsp;&nbsp;&nbsp;c. See how Livy user interface has been updated.
 # References
 1. <https://livy.apache.org>
