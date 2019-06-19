@@ -10,7 +10,7 @@ Simple demo of Apache Livy. Using Java code, I will run pyspark jobs using the L
 * Multiple users can interact with the Spark cluster concurrently and reliably<sup>[1]</sup>
 * Multiple Spark Contexts can be managed simultaneously<sup>[1]</sup>
 * Spark Contexts run on the cluster instead of the Livy Server<sup>[1]</sup>
-* Client does not need Spark installed
+* Client does not need Spark installed<sup>[2]</sup>
 
 # Livy Server Architecture<sup>[2]</sup>
 ![](https://github.com/danielhanbitlee/apache_livy_demo/blob/master/images/livy_server_architecture.png)
