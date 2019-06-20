@@ -19,7 +19,7 @@ Simple demo of Apache Livy. Using Java code, I will run batch pyspark jobs using
 * Linux Ubuntu 18.04.01 LTS Bionic
 * Java Version 1.8.0_211-b12 SE Runtime Environment
 * Spark version 2.4.3
-* Python version 3.6.8
+* Python version 3.7.1
 * Hadoop version 3.2.0
 * Maven version 3.6.1
 * Livy latest version <https://github.com/apache/incubator-livy>
